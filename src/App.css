@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: linear-gradient(to bottom, #9ba9eb, #c3caea);
+  min-height: 100vh;
+  max-height: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding: 20px;
+  font-family: 'Roboto';
+}
+
+.app-logo {
+  height: 10%;
+  width: 10%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.main-div-container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 100%;
+  min-height: 60vh;
+  padding: 60px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #5763a5;
+}
+
+.main-div-container-img1 {
+  display: none;
+}
+
+@media screen and (max-width: 765px) {
+  .main-div-container-img1 {
+    display: block;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 18px;
+  }
+}
+
+.add-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px;
+  color: #f8fafc;
+  background-color: #454f84;
+  border-radius: 10px;
+  height: auto;
+  width: 450px;
+  margin: 10px;
+}
+
+.main-heading {
+  font-size: 19px;
+  font-weight: normal;
+  font-family: 'Roboto';
+}
+
+.main-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f8fafc;
+  width: 100%;
+  height: 35px;
+  margin: 10px;
+  border-bottom: 20px;
+  border-radius: 3px;
+}
+
+.input-icon {
+  height: 18px;
+  width: 18px;
+  margin: 10px;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  border-width: 0px;
+  border-style: none;
+  outline: none;
+  border-left-style: solid;
+  border-left-color: #94a3b8;
+  border-left-width: 1px;
+  padding: 5px;
+  font-size: 13px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  background: transparent;
+}
+
+.add-button {
+  background-color: #0b67fb;
+  align-self: flex-end;
+  height: 30px;
+  width: 70px;
+  border-width: 0px;
+  border-radius: 3px;
+  text-align: center;
+  font-family: 'Roboto';
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  font-weight: normal;
+}
+
+.main-div-container-img2 {
+  width: 25%;
+  height: 100%;
+}
+
+.main-div-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 100%;
+  min-height: 60vh;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #5763a5;
+}
+
+.first-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.password-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.password-title {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.count-passwords {
+  border: 1px solid #94a3b8;
+  border-radius: 70px;
+  margin: 10px;
+  width: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.main-input-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f8fafc;
+  width: 15%;
+  height: 35px;
+  margin: 10px;
+  border-bottom: 20px;
+  border-radius: 3px;
+}
+
+.line {
+  border: 1px solid #9ba9eb;
+  width: 100%;
+}
+
+.show-total-password-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.checkbox-icon {
+  height: 20px;
+  width: 20px;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.show-password-para {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+.empty-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+}
+
+.no-password-image {
+  width: 300px;
+  height: 250px;
+}
+
+.no-password-para {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+.total-list-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.total-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #9ba9eb;
+  border-radius: 5px;
+  margin-right: 18px;
+  margin-bottom: 18px;
+}
+
+.list-content {
+  margin: 10px;
+  padding: 10px;
+}
+
+.stars-images {
+  height: 10px;
+  width: 100px;
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+.main-button-icon {
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  border-width: 0px;
+}
+
+.delete-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.website {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: 'Roboto';
+}
+.username {
+  color: #ffffff;
+  font-size: 13px;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+.yellow {
+  background-color: #f59e0b;
+}
+
+.green {
+  background-color: #10b981;
+}
+
+.orange {
+  background-color: #f97316;
+}
+
+.brown {
+  background-color: #b91c1c;
+}
+
+.blue {
+  background-color: #0ea5e9;
+}
+
+.totalInitial {
+  border-radius: 30px;
+  width: 35px;
+  margin: 10px;
+
+  text-align: center;
+  padding: 8px;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-div-container1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+  .main-div-container-img1 {
+    display: none;
+  }
+  .main-div-container-img2 {
+    display: block;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 18px;
+  }
+  .main-div-container {
+    min-height: 50vh;
+  }
+  .total-list-section {
+    justify-content: center;
+  }
+}
